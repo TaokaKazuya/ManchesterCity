@@ -17,25 +17,28 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('number', '時間帯(分)');
-      data.addColumn('number', '21/22(得失点73点)勝率76%');
-      data.addColumn('number', '今期(得失点80点)勝率83.8%');
+      data.addColumn('number', '18/19(得失点73点)');
+      data.addColumn('number', '19/20(得失点73点)');
+      data.addColumn('number', '20/21(得失点73点)');
+      data.addColumn('number', '21/22(得失点73点)');
+      data.addColumn('number', '今期(得失点80点)');
 
       data.addRows([
-        [10, 9 , 6],
-        [20,  7, 15],
-        [30,  7, 0],
-        [40,  8, 18],
-        [50,  5, 18],
-        [60,  3,  0],
-        [70,  15, 27],
-        [80,  14, 3],
-        [90,  15, 3],
+        [10, 12, 5, 5, 9, 6],
+        [20, 11, 4, 8, 7, 15],
+        [30, 5, 6, 9, 7, -3],
+        [40, 6, 5, 6, 8, 18],
+        [50, 10, 14, 4, 5, 18],
+        [60, 9, 10, 8, 3,  -6],
+        [70, 8, 11, 3, 15, 27],
+        [80, 4, 3, 5, 4, 3],
+        [90, 7, 9, 3, 15, 3],
        
       ]);
 
       var options = {
         chart: {
-          title: 'マンチェスターシティ',
+          title: 'MC',
           subtitle: '得失点 (点)　(今期の数字は13節終了時点のものを基に予想)'
         },
         width: 900,
@@ -55,7 +58,7 @@
   </head>
   
   <body>
-    <h1>卒業制作　サッカーにおける時間帯別の得点と、勝率との関係の分析</h1>
+    <h1>卒業制作①　マンチェスターシティ</h1>
     <div id="line_top_x"></div>
 
   </body>
